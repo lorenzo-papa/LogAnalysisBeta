@@ -1,0 +1,63 @@
+[Brute Force]
+#failed login times before success
+brute_force_threshold_success=10
+#failed login in x time
+threshold_BF_count=15
+#time in which search for failed login (minutes)
+threshold_BF_time=1
+#time in which search if there is a login after BF detect (minutes)
+#minutes
+threshold_BF_time_login_search=20
+#hours
+threshold_BF_time_login_search_max=10
+
+[Spray Attack]
+#different user failing login in time unit
+threshold_SA_count=15
+threshold_SA_time=1
+
+[AuthLog]
+auth_log_threshold_success=20
+log_lines_to_save=15
+#don't know why but first word is not read by re.search
+pattern_error=r"(fail)|(fail)|(failure)|(invalid)|(failed)|(error)|(exceeded)|(maximum)"
+#failed login in x time
+threshold_authlog_BF_count=20
+#time in which search for failed login (minutes)
+threshold_authlog_BF_time=1
+#time in which search if there is a login after BF detect (minutes)
+threshold_authlog_BF_time_login_search=10
+#hours for same check
+threshold_authlog_BF_time_login_search_max=5
+
+#unused pattern (the pass through file doesn't work, same pattern can be found in attacks_search)
+pattern_session=r"(?=.*sshd|ssh)(?=.*accepted)(?=.*password)"
+pattern_not_match=r"^((?!failed|failure|invalid|error|fail).)*"
+
+[Severity Parameters]
+#if is new login
+u1=0.9
+#else
+u2=0.8
+#if is IT or Private IP
+u3=0.8
+#else
+u4=1
+#if log during attack
+u5=1
+#else
+u6=0.8
+#if IP is attacker
+u7=1
+#if usr has been attacked
+u8=0.9
+#else
+u9=0.001
+#defualt
+u10=0.5
+
+[SHODAN]
+api_key=INSERT KEY HERE
+
+[ABUSEIP]
+api_key=INSERT KEY HERE
