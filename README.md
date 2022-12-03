@@ -1,8 +1,8 @@
 # LogAnalysisBeta
 
-Welcome! With LogAnalysisTool it is possible to perform *forensic* analysis of *Wtmp, Btmp and Secure log* (auth.log) files.
-Specifically, sessions and access attempts to the system are extracted, to detect the presence of eventual attack patterns
-(*Brute Force or Spray*) and the related (eventual) *malicious logins*. Moreover, it is possible to search from public sources
+Welcome! With LogAnalysisTool it is possible to perform **forensic** analysis of **Wtmp, Btmp and Secure log** (auth.log) files.
+Specifically, sessions and access attempts to the system are extracted, to detect the presence of eventual **attack patterns**
+(Brute Force or Spray) and the related (eventual) **malicious logins**. Moreover, it is possible to search from public sources
 details about the attacking IPs and/or possible IPs of interest. Finally, it ispossible to search by keywords or by time filters
 within (non-binary) files.
 
