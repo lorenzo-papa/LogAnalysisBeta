@@ -24,20 +24,20 @@ system access attempts will be searched in order to identify attack patterns (Br
 about these attempts and malicious logins. The search for information about the attacking IPs will be performed automatically.
 
 # Utility:
-- The **<grep>** command is used to find keywords within a single readable (non-binary) file. It performs a line-by-line check and
+- The <**grep**> command is used to find keywords within a single readable (non-binary) file. It performs a line-by-line check and
 extracts only those lines that match the requested pattern.
-- The **<rgrep>** command is used to find keywords within readable (non-binary) files in a directory. It performs a line-by-line check
+- The <**rgrep**> command is used to find keywords within readable (non-binary) files in a directory. It performs a line-by-line check
 and extracts only those lines that match the requested pattern.
-- The **<time>** command is used to filter logs within a single readable (non-binary) file through a requested time interval. It
+- The <**time**> command is used to filter logs within a single readable (non-binary) file through a requested time interval. It
 performs a line-by-line check and extracts only those lines that match the requested pattern.By default the <end time> is the
 locatime of the machine on which the execution is invoked
-- The **<rtime>** command is used to filter logs within readable (non-binary) files in a directory through a requested time interval.
+- The <**rtime**> command is used to filter logs within readable (non-binary) files in a directory through a requested time interval.
 It performs a line-by-line check and extracts only those lines that match the requested pattern.By default the <end time> is the
 locatime of the machine on which the execution is invoked
-- The **<single_ip_search>** command is used to get informations of a single IP address: IP geolocalization, public info (Description,
-CN, ASN, etc), reputation, open ports and CVE vulnerabilities.It uses IP2Geotools, AbuseIPDB and Shodan.
-- The **<multiple_ip_search>** command is used to get informations of multiple IP addresses: IP geolocalization, public info
-(Description, CN, ASN, etc), reputation, open ports and CVE vulnerabilities.It uses IP2Geotools, AbuseIPDB and Shodan. Due to
+- The <**single_ip_search**> command is used to get informations of a single IP address: IP geolocalization, public info (Description,
+CN, ASN, etc), reputation, open ports and CVE vulnerabilities. It uses IP2Geotools, AbuseIPDB and Shodan.
+- The <**multiple_ip_search**> command is used to get informations of multiple IP addresses: IP geolocalization, public info
+(Description, CN, ASN, etc), reputation, open ports and CVE vulnerabilities. It uses IP2Geotools, AbuseIPDB and Shodan. Due to
 the possible large amount of IPs requested, it presents the output data in a different format than the single-ip-search.
 
 Hope you will enjoy it! :)
