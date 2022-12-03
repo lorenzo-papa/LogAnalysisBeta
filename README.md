@@ -8,18 +8,18 @@ within (non-binary) files.
 
 pwd PDF: cybersecurity
 
-#Commands:
+# Commands:
 - {grep,rgrep,time,rtime,single_ip_search,multiple_ip_search,binary_parse,login_search,secure_log_search}
 
-#Analysis:
+# Analysis:
 - Through the **<binary_parse>** command it is possible to analyze Wtmp and Btmp files individually. Specifically, in the first case
 all the system sessions will be extracted, while in the second case the system access attempts will be searched to identify
 attack patterns (Brute Force and Spray) and statistical information about these attempts. The search for information about the
 attacking IPs will be performed automatically.
-- Through the ***<login_search>*** command it is possible to analyze a couple of Wtmp and Btmp files. All the system sessions and all
+- Through the **<login_search>** command it is possible to analyze a couple of Wtmp and Btmp files. All the system sessions and all
 system access attempts will be searched in order to identify attack patterns (Brute Force and Spray), statistical information
 about these attempts and malicious logins. The search for information about the attacking IPs will be performed automatically.
-- Through the ***<secure_log_search>*** command it is possible to analyze auth.log (or secure) files. All the system sessions and all
+- Through the **<secure_log_search>** command it is possible to analyze auth.log (or secure) files. All the system sessions and all
 system access attempts will be searched in order to identify attack patterns (Brute Force and Spray), statistical information
 about these attempts and malicious logins. The search for information about the attacking IPs will be performed automatically.
 
